@@ -27,18 +27,18 @@
     letter-spacing: 1.5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.navbar ul{
+.nav-links{
     list-style: none;
     display: flex;
     gap: 25px;
 }
-.navbar ul li a {
+.nav-links li a {
     text-decoration: none;
     color: #333;
     font-size: 17px;
     font-weight: 500;
 }
-.navbar ul li a:hover {
+.nav-links li a:hover {
     color: #0077cc;
 }
 input[type="search"] {
@@ -60,4 +60,21 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .nav-links{
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+}
+    .navbar{
+    
+}
+
 }
