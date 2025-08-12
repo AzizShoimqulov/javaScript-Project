@@ -57,6 +57,9 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+  .menu-toggle {
+    display: none;
+  }
 
 button:hover {
     background-color: #555;
@@ -66,12 +69,18 @@ button:hover {
     .nav-links{
     display: none;
     flex-direction: column;
-    background: #333;
+    background-color: #333;
     position: absolute;
-    top: 60px;
+    top: 64px;
     right: 0;
-    width: 200px;
+    width: 100%;
     padding: 20px;
+}
+    .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
 }
     .navbar{
         display: flex;
