@@ -1,16 +1,15 @@
-fetch('https://api.escuelajs.co/api/v1/products')
+fetch('https://jsonplaceholder.typicode.com/photos')
   .then(response => response.json())
-  .then(posts => {
+  .then(photos => {
     const container = document.getElementById('posts-container');
     container.innerHTML = '';
 
-    posts.forEach(product => {
+    photos.slice(0, 50).forEach(photo => {
       const div = document.createElement('div');
       div.className = 'post';
       div.innerHTML = `
-        <img src="${product.images[0]}" alt="${product.title}" width="200">
-        <h2>${product.title}</h2>
-        <p><strong>Price:</strong> $${product.price}</p>
+        <img src="${photo.thumbnailUrl}" alt="${photo.title}">
+        <p>${photo.title}</p>
       `;
       container.appendChild(div);
     });
@@ -19,11 +18,7 @@ fetch('https://api.escuelajs.co/api/v1/products')
     document.getElementById('posts-container').innerText = 'Xatolik yuz berdi: ' + error;
   });
 
-
-
-
-
-      const menuToggle = document.getElementById("menu-toggle");
+const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
 menuToggle.addEventListener("click", () => {
