@@ -64,7 +64,19 @@ button {
 button:hover {
     background-color: #555;
 }
-
+.post {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 15px;
+  background: white;
+  border-radius: 8px;
+  text-align: center;
+}
+.post img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
 @media (max-width: 768px) {
     .nav-links{
     display: none;
