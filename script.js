@@ -214,4 +214,3 @@ fetch('https://jsonplaceholder.typicode.com/photos')
 // menuToggle.addEventListener("click", () => {
 //   navLinks.classList.toggle("active");
 // });
-
