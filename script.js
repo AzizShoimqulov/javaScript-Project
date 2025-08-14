@@ -111,4 +111,3 @@ fetch('https://jsonplaceholder.typicode.com/photos')
 //   navLinks.classList.toggle("active");
 // });
 
-
