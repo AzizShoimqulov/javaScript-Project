@@ -140,5 +140,3 @@ fetch('https://jsonplaceholder.typicode.com/photos')
 // });
 
 
-
-
